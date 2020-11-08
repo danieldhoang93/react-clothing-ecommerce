@@ -16,20 +16,17 @@
         & .background-image {
             //animation: diagonal .15s forwards;
             transform: scale(1.1);
-            transition: transform 2s cubic-bezier(.25, .45, .45, 1);
+            transition: transform .9s cubic-bezier(.15, .65, .75, 1);
         }
 
-        .menu-item {
-            background-color: rgb(0, 0, 0);
-        }
-        
         @keyframes diagonal {
-            0%       { transform: translatex(0) translatey(0) }
-            100%     { transform: translatex(7px) translatey(-7px); }
+            0%       { transform: translatex(0) translatey(0)}
+            100%     { transform: translatex(7px) translatey(-7px)}
         }
 
         & .content {
             opacity: .9;
+            background-color: rgb(255, 255, 255);
         }
     }
 
@@ -73,6 +70,7 @@
       .subtitle {
         font-weight: lighter;
         font-size: 16px;
+        padding-bottom: 15px;
       }
     }
   }
