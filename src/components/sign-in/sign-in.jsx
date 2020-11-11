@@ -2,7 +2,6 @@ import React from 'react';
 import './sign-in.scss';
 import FormInput from '../form-input/form-input.jsx';
 import CustomButton from '../custom-button/custom-button.jsx';
-import SignUp from '../sign-up/sign-up.jsx';
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils.js';
 
 class SignIn extends React.Component {
@@ -33,10 +32,7 @@ class SignIn extends React.Component {
 
         this.setState({ [name]: value});
     }
-
-    componentDidMount() {
-        console.log(signInWithGoogle);
-    }
+    
     render() {
         return (
             <div className='sign-in'>
